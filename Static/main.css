@@ -1,0 +1,839 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+*
+{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #101630;
+    scroll-behavior: smooth;
+}
+body
+{
+    height: 870vh;
+    margin: 0;
+}
+li
+{
+    list-style-type: none;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+a:hover
+{
+    color: #50c4ed;
+}
+
+/*--------------------------------------------------------------------ANIMATIONS-----------------------------------------------------------------------*/
+
+.animation-up
+{
+    animation: 1.5s line-up ease-in-out
+    none;
+}
+@keyframes line-up 
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    20%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.animation-opacity
+{
+    animation: 2s opacity linear
+    none;
+}
+@keyframes opacity
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: .8;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+/*--------------------------------------------------------------------SCROLL-TO-TOP-BUTTON-----------------------------------------------------------------------*/
+
+#progress 
+{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+#progress-value 
+{
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #405bc7;
+}
+.progress-bar
+{
+    z-index: 1;
+    width: 100px;
+}
+
+/*--------------------------------------------------------------------HEADER-------------------------------------------------------------------------------------*/
+
+header
+{
+    position: relative;
+}
+.navbar
+{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .links
+{
+    display: flex;
+    padding-left: 18rem;
+    font-weight: 500;
+    gap: 5rem;
+    padding-top: 2rem;
+    text-transform: uppercase;
+}
+button
+{
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.btn
+{
+    background: #4d82d0;
+    outline: none;
+    transition: 0.5s ease-in-out;
+}
+.btn:hover
+{
+    transition: 0.1s ease-in-out;
+    background: transparent;
+    outline: 2px solid #4d82d0;
+}
+.navbar .logo
+{
+    width: 200px;
+    position: absolute;
+    left: 1rem;
+    top: 1.1rem;
+}
+/*--------------------------------------------------------------------HOME---------------------------------------------------------------------------------*/
+
+.i-am-a
+{
+    color: gray;
+    font-size: 50px;
+    font-weight: bolder;
+    z-index: 1;
+}
+.i-am-a p
+{
+    padding-left: 2.1rem;
+    position: relative;
+    top: 4rem;
+    z-index: 1;
+}
+
+.main-text
+{
+    color: white;
+    font-size: 80px;
+    font-weight: 550;
+}
+.main-text p
+{
+    position: absolute;
+    top: 245px;
+    margin: 0 auto;
+    left: 2.8rem;
+}
+
+/* PREVIOUS PROJECTS BUTTON */
+
+.prev-proj 
+{
+   position: absolute;
+   background-color: #4d82d0;
+   outline: #50c4ed;
+   top: 34rem;
+   padding: 2rem 7rem;
+   left: 3.3rem;
+   transition: 0.4s ease-in-out;
+   z-index: 1;
+   font-weight: bolder;
+   border-radius: 15px;
+}
+.prev-proj:hover
+{
+    background: #405bc7;
+    transition: 0.4s ease-in-out;
+}
+
+/*--------------------------------------------------------------------ABOUT-ME---------------------------------------------------------------------------------*/
+
+.about
+{
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Montserrat';
+    padding-top: 40rem;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+}
+.about-me
+{
+    position: relative;
+    right: 8.9rem;
+}
+.about b
+{
+    color: #9096a2;
+    font-weight: 500;
+    text-transform: none;
+    line-height: normal;
+    text-align: left;
+}
+.hello
+{
+    position: relative;
+    left: 13.7rem;
+    text-align: left;
+}
+.second
+{
+    position: relative;
+    left: 14.8rem;
+    text-align: left;
+}
+.third
+{
+    position: relative;
+    left: 13.5rem;
+    text-align: left;
+}
+.fourth
+{
+    position: relative;
+    left: 12.3rem;
+    text-align: left;
+}
+
+/* BUTTONS */
+
+.hire-me
+{
+    position: absolute;
+    background-color: #4d82d0;
+    outline: none;
+    top: 69rem;
+    padding: 2rem 7rem;
+    left: 34rem;
+    transition: 0.5s ease-in-out;
+    z-index: 1;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+.hire-me:hover
+{
+    background: transparent;
+    outline: 2px solid #4d82d0;
+    transition: 0.1s ease-in-out;
+}
+.resume
+{
+    position: absolute;
+    left: 54rem;
+    top: 69rem;
+    padding: 2rem 7rem;
+    outline: 2px solid #4d82d0;
+    transition: 0.4s ease-in-out;
+    border-radius: 15px;
+}
+.resume:hover
+{
+    transition: 0.4s ease-in-out;
+    background: #4d82d0;
+}
+
+.image img
+{
+    max-height: 400px;
+    max-width: 400px;
+    border-radius: 10px;
+}
+.image
+{
+    position: absolute;
+    left: 3rem;
+    top: 51rem;
+    z-index: 1;
+}
+.rectangle
+{
+    position: absolute;
+    top: 2.8rem;
+    left: 2.8rem;
+    z-index: -1;
+}
+
+/*--------------------------------------------------------------------PORTFOLIO--------------------------------------------------------------------------------------*/
+
+.portfolio
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 90rem;
+    left: 30rem;
+}
+.portfolio-links
+{
+    display: flex;
+    font-weight: 500;
+    gap: 5rem;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    padding-left: 5rem;
+    font-weight: 510;
+}
+
+.project-1 p
+{
+    color: #50c4ed;
+    font-weight: 500;
+    position: relative;
+    right: 43.5rem;
+    top: 11rem
+}
+.type-1 b
+{
+    position: relative;
+    right: 38.7rem;
+    top: 11rem;
+    text-transform: capitalize;
+}
+.type-1 p
+{
+    position: relative;
+    text-transform: none;
+    text-align:left;
+    font-weight: 500;
+    font-size: 20px;
+    color: #9096a2;
+    top: 11rem;
+    line-height: normal;
+    text-wrap: none;
+    right: 24.5rem;
+}
+.trailer-img img
+{
+    max-height: 390px;
+    max-width: 530px;
+    border-radius: 15px;
+    z-index: 1;
+}
+.trailer-img
+{
+    position: absolute;
+    top: 20rem;
+    left: 25rem;
+    z-index: 1;
+}
+.img-rectangle
+{
+    position: absolute;
+    top: 23rem;
+    left: 22.5rem;
+}
+.img-rectangle img
+{
+    max-width: 490px;
+    max-height: 630px;
+    z-index: -1;
+}
+.read-more-1
+{
+    position: relative;
+    color: #ffff;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 18px;
+    right: 38rem;
+    top: 5.5rem;
+}
+.readmore-1 img
+{
+    position: relative;
+    right: 42.8rem;
+    top: 2.6rem;
+}
+
+/* PROJECT-2 */
+
+.project-2
+{
+    color: #50c4ed;
+    font-weight: 500;
+    position: relative;
+    left: 1.9rem;
+    top: 26rem
+}
+.type-2 b
+{
+    position: relative;
+    left: 1.9rem;
+    top: 26rem;
+    text-transform: capitalize;
+}
+.type-2 p
+{
+    position: relative;
+    text-transform: none;
+    text-align:left;
+    font-weight: 500;
+    font-size: 20px;
+    color: #9096a2;
+    top: 26rem;
+    line-height: normal;
+    text-wrap: none;
+    left: 20.5rem;
+}
+.intro-img img
+{
+    max-height: 390px;
+    max-width: 530px;
+    border-radius: 15px;
+    z-index: 1;
+}
+.intro-img
+{
+    position: absolute;
+    top: 55rem;
+    right: 35rem;
+    z-index: 1;
+}
+.img-rectangle-2 img
+{
+    max-width: 490px;
+    max-height: 630px;
+    z-index: -1;
+}
+.img-rectangle-2
+{
+    position: absolute;
+    top: 58rem;
+    right: 32rem;
+}
+
+/* PROJECT 3 */
+
+.project-3 
+{
+    color: #50c4ed;
+    font-weight: 500;
+    position: relative;
+    right: 43.5rem;
+    top: 44rem
+}
+.type-3 b
+{
+    position: relative;
+    right: 36.9rem;
+    top: 44rem;
+    text-transform: capitalize;
+}
+.type-3 p
+{
+    position: relative;
+    text-transform: none;
+    text-align:left;
+    font-weight: 500;
+    font-size: 20px;
+    color: #9096a2;
+    top: 44rem;
+    line-height: normal;
+    text-wrap: none;
+    right: 25rem;
+}
+.poster-img img
+{
+    max-height: 390px;
+    max-width: 530px;
+    border-radius: 15px;
+    z-index: 1;
+}
+.poster-img
+{
+    position: absolute;
+    top: 90rem;
+    left: 25.2rem;
+    z-index: 1;
+}
+.img-rectangle-3
+{
+    position: absolute;
+    top: 93rem;
+    left: 22rem;
+}
+.img-rectangle-3 img
+{
+    max-width: 490px;
+    max-height: 630px;
+    z-index: -1;
+}
+
+/* PROJECT 4 */
+
+.project-4
+{
+    color: #50c4ed;
+    font-weight: 500;
+    position: relative;
+    left: 2rem;
+    top: 58rem
+}
+.type-4 b
+{
+    position: relative;
+    left: 3.5rem;
+    top: 58rem;
+    text-transform: capitalize;
+}
+.type-4 p
+{
+    position: absolute;
+    text-transform: none;
+    text-align:left;
+    font-weight: 500;
+    font-size: 20px;
+    color: #9096a2;
+    line-height: normal;
+    text-wrap: none;
+    top: 135rem;
+    margin: 0 auto;
+    left: 20.5rem;
+}
+.ui-img img
+{
+    max-height: 390px;
+    max-width: 530px;
+    border-radius: 15px;
+    z-index: 1;
+}
+.ui-img
+{
+    position: absolute;
+    top: 125rem;
+    right: 35rem;
+    z-index: 1;
+}
+.img-rectangle-4 img
+{
+    max-width: 490px;
+    max-height: 630px;
+    z-index: -1;
+}
+.img-rectangle-4
+{
+    position: absolute;
+    top: 127.9rem;
+    right: 32rem;
+}
+.work-ex
+{
+    background: #4d82d0;
+    outline: none;
+    transition: 0.4s ease-in-out;
+    padding: 2rem 4rem;
+    font-weight: 510;
+    text-transform: none;
+}
+.work-ex:hover
+{
+    background: #405bc7;
+    transition: 0.3s ease-in-out;
+}
+.work
+{
+    position: relative;
+    top: 80rem;
+    padding: 0 auto;
+    margin: auto 0;;
+    right: 5.8rem;
+}
+
+/*--------------------------------------------------------------------SERVICES--------------------------------------------------------------------------------------*/
+
+.services 
+{
+    margin: 0 auto;
+    padding: auto;
+}
+.services h1
+{
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    top: 195rem;
+    padding-left: 40rem;
+    font-weight: 505;
+    margin: 0 auto;
+}
+
+/* BOXES */
+
+.box-container
+{
+    position: relative;
+    top: 198rem;
+    padding-left: 15rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box b
+{
+    color: #ffff;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-left: 20px;
+    position: relative;
+    top: 1rem;
+}
+.box
+{
+    width: 410px;
+    height: 300px;
+    outline: solid 5px #4d82d0;
+    border-radius: 10px;
+    margin: 35px;
+    box-shadow: rgba(72, 135, 202, 0.8) 0 0 20px 7px;
+    transition: 0.4s ease-in-out;
+}
+.box:hover
+{
+    transition: 0.4s ease-in-out;
+    box-shadow: rgba(72, 135, 202, 0.8) 0 0 0px 0px;
+    cursor: pointer;
+}
+.box p
+{
+    color: #9096a2;
+    padding: 40px;
+    font-weight: 450;
+}
+
+/*--------------------------------------------------------------------EXPERIENCE--------------------------------------------------------------------------------------*/
+
+.experience h2
+{
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    top: 205rem;
+    padding-left: 40.1rem;
+    font-weight: 505;
+    margin: 0 auto;
+}
+
+/* LOGOS */
+
+.exp-logo-container
+{
+    position: relative;
+    top: 206.5rem;
+    padding-left: 17.7rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.exp-logo img
+{
+    width: 95px;
+    height: 95px;
+}
+.exp-logo
+{
+    width: 200px;
+    height: 200px;
+    margin: 65px;
+    transition: 0.4s ease-in-out;
+}
+.exp-logo img:hover
+{
+    transition: 0.4s ease-in-out;
+    /* box-shadow: rgba(255, 255, 255, 0.8)0 0 10px 3px; */
+    filter: brightness(1.2);
+}
+.logos-names 
+{
+    position: relative;
+    top: 200rem;
+    padding-left: 23rem;
+    color: #9096a2;
+}
+.ae
+{
+    position: absolute;
+    bottom: 22rem;
+    left: 21.5rem;
+}
+.premiere
+{
+    position: absolute;
+    bottom: 22.1rem;
+    left: 42rem;
+}
+.photoshop
+{
+    position: absolute;
+    bottom: 22.3rem;
+    left: 63.2rem;
+}
+.illustrator
+{
+    position: absolute;
+    bottom: 1.9rem;
+    left: 22.21rem;
+}
+.figma
+{
+    position: absolute;
+    bottom: 1.9rem;
+    left: 44rem;
+}
+.xd
+{
+    position: absolute;
+    bottom: 1.9rem;
+    left: 63.5rem;
+}
+
+/*--------------------------------------------------------------------CONTACT ME-------------------------------------------------------------------------------------------*/
+
+.contact-me
+{
+    position: relative;
+    top: 215rem;
+    
+}
+/* .contact-me nav
+{
+    background: #ffffff;
+    width: 100%;
+    height: 10rem;
+    margin-top: 0px;
+} */
+.contact-me hr
+{
+    margin-top: 50px;
+    background:#50c4ed;
+}
+.contact-me li
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 2px;
+    position: relative;
+    padding: 10px;
+    top: 40px;
+}
+.contact-me h4
+{
+    color: #50c4ed;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+.contact-me h5
+{
+    color: #ffffff;
+    position: absolute;
+    left: 43rem;
+    bottom: 3.5rem;
+    cursor:default;
+    font-size: 25px;
+}
+/* .phone-icon
+{
+    position: absolute;
+    left: 23rem;
+    bottom: 2.9rem;
+} */
+.details-icon
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 15px;
+    width: 0;
+    height: 0;
+    bottom: 0rem;
+    top: 2rem;
+    left: 23rem;
+}
+.details
+{
+    color: #ffffff;
+    position: relative;
+    width: 0;
+    height: 0;
+    left: 25rem;
+}
+.details,.address p
+{
+    text-wrap: nowrap;
+    position: relative;
+    bottom: 4.5rem;
+}
