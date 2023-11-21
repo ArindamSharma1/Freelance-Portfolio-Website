@@ -1042,6 +1042,7 @@ button
     {
         width: 100%;
         height: 60px;
+        padding-top: 2rem;
         max-width: 1200px;
         text-wrap: nowrap;
     }
@@ -1052,6 +1053,34 @@ button
     {
         height: 60px;
         max-width: 1200px;
+        text-wrap: nowrap;
+    }
+}
+@media (max-width: 1011px) 
+{
+    .navbar
+    {
+        height: 60px;
+        padding-top: 0.5rem;
+        max-width: 1200px;
+        text-wrap: nowrap;
+    }
+}
+
+@media (max-width: 967px) 
+{
+    button
+    {
+        margin-top: 2rem;
+        text-wrap: nowrap;
+    }
+}
+@media (max-width: 1002px) 
+{
+    button
+    {
+        margin-top: 2rem;
+        margin-left: 3rem;
         text-wrap: nowrap;
     }
 }
