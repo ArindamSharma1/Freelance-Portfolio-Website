@@ -801,7 +801,7 @@ button
     color: #ffffff;
     position: absolute;
     left: 43rem;
-    bottom: 3.5rem;
+    bottom: 4.5rem;
     cursor:default;
     font-size: 25px;
 }
@@ -836,4 +836,35 @@ button
     text-wrap: nowrap;
     position: relative;
     bottom: 4.5rem;
+}
+.lets-getin-touch
+{
+    color: #ffffff;
+    position: relative;
+    width: 0;
+    height: 0;
+    left: 50rem;
+}
+.lets-getin-touch,.touch p
+{
+    text-wrap: nowrap;
+    position: relative;
+    bottom: 3.5rem;
+    font-size: 20px;
+}
+.copyright
+{
+    color: #ffffff;
+    position: relative;
+    width: 0;
+    height: 0;
+    left: 70rem;
+    cursor: default;
+}
+.copyright, .copyright-text p
+{
+    text-wrap: nowrap;
+    position: relative;
+    bottom: 4.2rem;
+    font-size: 15px;   
 }
