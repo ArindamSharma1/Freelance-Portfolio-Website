@@ -890,3 +890,81 @@ button
         width: 100%;
     }
 }
+
+@media (max-width: 767px) 
+{
+    .contact-me hr
+    {
+        width: 50%;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 574px) 
+{
+    .contact-me hr
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) 
+{
+    .contact-me li
+    {
+        width: 100%;
+        margin: 2px;
+        padding: 10px;
+        top: 40px;
+    }
+}
+@media (max-width: 574px) 
+{
+    .contact-me li
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) 
+{
+    .contact-me h4
+    {
+        width: 100%;
+        top: 10px;
+        left: 50px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 574px) 
+{
+    .contact-me li
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) 
+{
+    .contact-me h5
+    {
+        width: 100%;
+        left: 43rem;
+        bottom: 5.5rem;
+    }
+}
+@media (max-width: 574px) 
+{
+    .contact-me h5
+    {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
