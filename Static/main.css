@@ -801,7 +801,7 @@ button
     color: #ffffff;
     position: absolute;
     left: 43rem;
-    bottom: 4.5rem;
+    bottom: 5.5rem;
     cursor:default;
     font-size: 25px;
 }
@@ -868,3 +868,9 @@ button
     bottom: 4.2rem;
     font-size: 15px;   
 }
+.touch b
+{
+    color: #50c4ed;
+}
+
+/*--------------------------------------------------------------------MEDIA-Q-------------------------------------------------------------------------------------------*/
