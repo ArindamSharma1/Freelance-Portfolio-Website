@@ -961,10 +961,56 @@ button
     }
 }
 
+@media (max-width: 767px) 
+{
+    .details-icon
+    {
+        width: 0;
+        height: 0;
+        bottom: 0rem;
+        top: 2rem;
+        left: 23rem;
+    }
+}
+@media (max-width: 574px) 
+{
+    .details-icon
+    {
+        width: 0;
+        height: 0;
+    }
+}
 
+@media (max-width: 767px) 
+{
+    .details
+    {
+        width: 100%;
+        left: 25rem;
+    }
+}
+@media (max-width: 574px) 
+{
+    .details
+    {
+        width: 100%;    
+    }
+}
 
-
-
-
-
-
+@media (max-width: 767px) 
+{
+    .details, .address p
+    {
+        width: 100%;
+        margin-bottom: 20rem;
+        text-wrap: nowrap;
+    }
+}
+@media (max-width: 574px) 
+{
+    .details, .address p
+    {
+        width: 100%;
+        text-wrap: nowrap;
+    }
+}
