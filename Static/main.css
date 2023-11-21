@@ -1015,3 +1015,43 @@ button
         text-wrap: nowrap;
     }
 }
+
+@media (max-width: 767px) 
+{
+    header
+    {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+}
+@media (max-width: 574px) 
+{
+    header
+    {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        text-wrap: nowrap;
+    }
+}
+
+@media (max-width: 767px) 
+{
+    .navbar
+    {
+        width: 100%;
+        height: 60px;
+        max-width: 1200px;
+        text-wrap: nowrap;
+    }
+}
+@media (max-width: 574px) 
+{
+    .navbar
+    {
+        height: 60px;
+        max-width: 1200px;
+        text-wrap: nowrap;
+    }
+}
