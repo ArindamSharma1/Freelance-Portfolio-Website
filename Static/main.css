@@ -198,7 +198,7 @@ button
 
 /* PREVIOUS PROJECTS BUTTON */
 
-.prev-proj 
+.prev-proj
 {
    position: absolute;
    background-color: #4d82d0;
@@ -1082,5 +1082,26 @@ button
         margin-top: 2rem;
         margin-left: 3rem;
         text-wrap: nowrap;
+    }
+}
+@media (max-width: 788px) 
+{
+    .main-text
+    {
+        text-wrap: nowrap;
+    }
+}
+@media (max-width: 764px) 
+{
+    .i-am-a
+    {
+        text-wrap: nowrap;
+    }
+}
+@media (max-width: 788px) 
+{
+    button
+    {
+        margin-top: 45rem;
     }
 }
