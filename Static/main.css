@@ -659,14 +659,13 @@ button
     outline: solid 5px #4d82d0;
     border-radius: 10px;
     margin: 35px;
-    box-shadow: rgba(72, 135, 202, 0.8) 0 0 20px 7px;
+    box-shadow: rgba(72, 135, 202, 0.8) 0 0 0px 0px;
     transition: 0.4s ease-in-out;
 }
 .box:hover
 {
     transition: 0.4s ease-in-out;
-    box-shadow: rgba(72, 135, 202, 0.8) 0 0 0px 0px;
-    cursor: pointer;
+    box-shadow: rgba(72, 135, 202, 0.8) 0 0 20px 7px;
 }
 .box p
 {
@@ -779,7 +778,7 @@ button
 .contact-me hr
 {
     margin-top: 50px;
-    background:#50c4ed;
+    background:#1A2454;
 }
 .contact-me li
 {
@@ -873,6 +872,8 @@ button
 {
     color: #50c4ed;
 }
+
+
 
 /*--------------------------------------------------------------------MEDIA-Q-------------------------------------------------------------------------------------------*/
 
